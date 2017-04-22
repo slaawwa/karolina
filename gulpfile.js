@@ -75,7 +75,11 @@ gulp.task('deploy', function() {
     });
      
     if (!argv.del) {
-        return gulp.src( ['./**/*', '!node_modules{,/**}', '!config{,/**}', '!bower{,/**}', '!bower_components{,/**}', '**/.htaccess'], { base: CNF.basePath, buffer: false } )
+        return gulp.src( ['./**/*', '!node_modules{,/**}', '!config{,/**}', '!bower{,/**}', '!bower_components{,/**}', '**/.htaccess'], { 
+        		// base: CNF.basePath, 
+        		cmd: CNF.basePath, 
+        		buffer: false 
+        	} )
             .pipe( $.rename(function(fname) {
                 console.info('fname:', fname.basename, fname.extname);
             }))

@@ -1,0 +1,26 @@
+{
+  "name": "karolina.kpi2day.com",
+  "version": "1.0.0",
+  "description": "Personal blog Karoline Smilichenko",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/slaawwa/karolina.git"
+  },
+  "keywords": [
+    "karolina",
+    "smilichenko",
+    "blog",
+    "personal",
+    "yii2"
+  ],
+  "author": "slaawwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slaawwa/karolina/issues"
+  },
+  "homepage": "https://github.com/slaawwa/karolina#readme"
+}

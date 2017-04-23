@@ -1,0 +1,73 @@
+[23-Apr-2017 21:48:42 Europe/Kiev] An Error occurred while handling another error:
+exception 'ReflectionException' with message 'Method yii\db\ActiveQuery::sort() does not exist' in /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/web/ErrorHandler.php:195
+Stack trace:
+#0 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(195): ReflectionMethod->__construct('yii\db\ActiveQu...', 'sort')
+#1 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/views/errorHandler/callStackItem.php(26): yii\web\ErrorHandler->addTypeLinks('yii\db\ActiveQu...')
+#2 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#3 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#4 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#5 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(304): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#6 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(326): yii\web\ErrorHandler->renderCallStackItem('/home/ubuntu/wo...', 67, 'yii\db\ActiveQu...', 'sort', Array, 3)
+#7 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/views/errorHandler/exception.php(381): yii\web\ErrorHandler->renderCallStack(Object(yii\base\UnknownMethodException))
+#8 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#9 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#10 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#11 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/web/ErrorHandler.php(116): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#12 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\UnknownMethodException))
+#13 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\UnknownMethodException))
+#14 {main}
+Previous exception:
+exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\db\ActiveQuery::sort()' in /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /home/ubuntu/workspace/basic/controllers/SiteController.php(67): yii\base\Component->__call('sort', Array)
+#1 /home/ubuntu/workspace/basic/controllers/SiteController.php(67): yii\db\ActiveQuery->sort(Array)
+#2 [internal function]: app\controllers\SiteController->actionIndex()
+#3 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#6 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#7 /home/ubuntu/workspace/basic/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/ubuntu/workspace/basic/web/index.php(22): yii\base\Application->run()
+#9 {main}
+$_SERVER = [
+    'REDIRECT_STATUS' => '200',
+    'HTTP_HOST' => 'karolina-slaawwa.c9users.io:80',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_REFERER' => 'http://karolina-slaawwa.c9users.io/post/index',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch',
+    'HTTP_ACCEPT_LANGUAGE' => 'uk,ru;q=0.8,en-US;q=0.6,en;q=0.4',
+    'HTTP_COOKIE' => '_csrf=ef4685ade08b39bd4a1ca417a693e5f898cf5863343d86e006e08f1c51f54b0ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%94wl%C7%E7%2A%A6%A4%16%AD%3C%B5D%FA%A9%F5%CF%7E%D9%F7G%A0%BC%C3%94%EC%E8%E9%F1%90sv%22%3B%7D; _debug=1; PHPSESSID=rtqc4vt6lrvs5s17b7p8t4qbp2; _identity=2b73d756dffd4795cd5b3044c291553fbd8aac8aea9d2e4f60f6961b132415a8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D',
+    'HTTP_X_FORWARDED_PROTO' => 'http',
+    'HTTP_X_FORWARDED_PORT' => '80',
+    'HTTP_X_FORWARDED_FOR' => '178.209.69.5',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.7.3/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin',
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at karolina-slaawwa.c9users.io Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)',
+    'SERVER_NAME' => 'karolina-slaawwa.c9users.io',
+    'SERVER_ADDR' => '172.17.0.89',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '10.240.0.225',
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace',
+    'SERVER_ADMIN' => '[no address given]',
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/basic/web/index.php',
+    'REMOTE_PORT' => '48734',
+    'REDIRECT_URL' => '/',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => '',
+    'REQUEST_URI' => '/',
+    'SCRIPT_NAME' => '/basic/web/index.php',
+    'PHP_SELF' => '/basic/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1492973322.8269999027252197265625,
+    'REQUEST_TIME' => 1492973322,
+]
